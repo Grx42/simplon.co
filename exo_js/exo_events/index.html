@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Test events</title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+  <div id="liste">
+    <label for="all">Tout</label>
+    <input type="radio" name="exo_events" id="all" value="all" checked onclick="change_li('all');"/>
+    <label for="women">Femmes</label>
+    <input type="radio" name="exo_events" id="women" value="women" onclick="change_li('women');"/>
+    <label for="men">Hommes</label>
+    <input type="radio" name="exo_events" id="men" value="men" onclick="change_li('men');"/>
+
+    <ul>
+      <li class="men">tony</li>
+      <li class="women">charlotte</li>
+      <li class="women">laure</li>
+      <li class="men">fred</li>
+      <li class="women">marie</li>
+      <li class="women">sarah</li>
+      <li class="men">arthur</li>
+      <li class="men">obi-wan kenobi</li>
+    </ul>
+  </div>
+
+  <script src="event.js"></script>
+</body>
+
+</html>

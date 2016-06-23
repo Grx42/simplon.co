@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>exo notes</title>
+  </head>
+
+  <body>
+
+    <script>
+
+      var tab_notes = ['20', '12', '0', '2', '10', '19', '17', '8', '5', '13', '14', '2', '12'];
+      var bons_eleves = 0;
+      var moyenne = 0;
+      var note_max = 0;
+      var search_note = prompt("Entrez une note a rechercher dans le tableau");
+      var search_found = 0
+
+      for (var i = 0; i < tab_notes.length; i++)
+      {
+        if (tab_notes[i] == search_note)
+        {
+          search_found += 1;
+        }
+
+        if (parseInt(tab_notes[i]) >= 10)
+        {
+          bons_eleves += 1;
+        }
+        moyenne += parseInt(tab_notes[i]);
+
+        if (parseInt(tab_notes[i]) > note_max)
+        {
+          note_max = parseInt(tab_notes[i]);
+        }
+      }
+
+      if (search_found > 0)
+      {
+        alert('La note a ete trouvee ' + search_found + ' fois');
+      }
+      else
+      {
+        alert("La note n'a pas ete trouvee dans le tableau");
+      }
+
+      var moyenne_calcul = moyenne / tab_notes.length;
+
+      alert('Il y a ' + bons_eleves.toString() + ' bon(s) eleve(s) dans la classe');
+      alert('La moyenne de la classe est de ' + moyenne_calcul.toFixed(2));  //toFixed(2) arrondi a 2 decimales
+      alert('La meilleure note est ' + note_max.toString());
+    </script>
+  </body>
+
+</html>

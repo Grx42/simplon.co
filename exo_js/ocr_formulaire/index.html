@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>FORMULAIRES</title>
+  </head>
+  <body>
+
+
+    <input class="text" type="text" value="Entrez un texte" />
+    <br /><br />
+    <input class="text" type="text" value="Entrez un texte" />
+    <br /><br />
+    <input class="text" type="text" value="Entrez un texte" />
+    <br /><br />
+    <input class="text" type="text" value="Entrez un texte" />
+    <br /><br />
+    <input class="text" type="text" value="Entrez un texte" />
+    <br /><br />
+    <input class="text" type="text" value="Entrez un texte" />
+    <br /><br />
+    <input class="text" type="text" value="Entrez un texte" />
+    <br /><br />
+    <input class="text" type="text" value="Entrez un texte" />
+    <br /><br />
+    <input class="text" type="text" value="Entrez un texte" />
+    <br /><br />
+    <input class="text" type="text" value="Entrez un texte" />
+    <br /><br />
+    <input class="text" type="text" value="Entrez un texte" />
+    <br /><br />
+
+    <script>
+    var elemField = document.getElementsByClassName('text');
+    var tabTroll = ['', 'HAHAHA', 'raté !', 'Essaye encore !', "C'est enervant, hein ?", "Eh ben alors? T'as du mal ?"];
+
+    for (var i=0, c=elemField.length; i < c; i++)
+      {
+
+        elemField[i].addEventListener('onchange', function(e){
+          e.target.value = "Non, je veux pas";
+        }, false);
+
+        elemField[i].addEventListener('mouseover', function(e){
+          this.focus();
+          this.value = '';
+          this.placeholder = tabTroll[Math.floor((Math.random() * 5) + 1)];
+          this.value = '';
+          this.disabled = true;
+          setTimeout(function () {
+            e.target.disabled = false;
+          }, 10000);
+        }, false);
+
+        elemField[i].addEventListener('mouseout', function(e){
+          this.blur();
+        }, false);
+      }
+    </script>
+<!--
+    <form class="myForm">
+        <input type="text" value="Entrez un texte" />
+        <br /><br />
+        <input type="submit" value="Submit !" />
+        <input type="reset" value="Reset !" />
+    </form>
+
+    <script>
+        var myForm = document.getElementById('myForm');
+
+        myForm.addEventListener('submit', function(e) {
+            alert('Vous avez envoyé le formulaire !\n\nMais celui-ci a été bloqué pour que vous ne changiez pas de pagthis.')
+        }, true);
+
+        myForm.addEventListener('reset', function(e) {
+            alert('Vous avez réinitialisé le formulaire !');
+        }, true);
+    </script>
+-->
+<!--
+    <select class="list">
+        <option>Sélectionnez votre sexe</option>
+        <option>Homme</option>
+        <option>Femme</option>
+    </select>
+
+    <script>
+        var list = document.getElementById('list');
+
+        list.addEventListener('change', function() {
+
+         // On affiche le contenu de l'élément <option> ciblé par la propriété selectedIndex
+            alert(list.options[list.selectedIndex].innerHTML);
+
+        }, true);
+    </script>
+
+-->
+  <!--  <label><input type="radio" name="check" value="1" /> Case n°1</label><br />
+<label><input type="radio" name="check" value="2" /> Case n°2</label><br />
+<label><input type="radio" name="check" value="3" /> Case n°3</label><br />
+<label><input type="radio" name="check" value="4" /> Case n°4</label>
+<br /><br />
+<input type="button" value="Afficher la case cochée" onclick="check();" />
+
+<script>
+function check() {
+    var inputs = document.querySelectorAll('input[type=radio]:checked'),
+        inputsLength = inputs.length;
+
+    for (var i = 0 ; i < inputsLength ; i++) {
+        alert('La case cochée est la n°'+ inputs[i].value);
+    }
+}
+</script>
+
+-->
+
+    <!--<input class="text" type="text" placeholder="HAHA TU PEUX PAS CLIC"/>
+
+    <script>
+        var text = document.getElementById('text');
+
+        text.disabled = true;
+    </script>-->
+
+
+
+  <!--  <input class="text" type="text" size="60" value="Vous n'avez pas le focus !" />
+
+<script>
+    var text = document.getElementById('text');
+
+    text.addEventListener('focus', function(e) {
+        this.target.placeholder = "Vous avez le focus !";
+    }, true);
+
+    text.addEventListener('blur', function(e) {
+        this.target.placeholder = "Vous n'avez pas le focus !";
+    }, true);
+</script>
+
+    <script src="form.js"></script>-->
+  </body>
+</html>

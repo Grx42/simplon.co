@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>test framelooper</title>
+    <meta name="description" content="">
+    <meta name="author" content="root">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/zoombox.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <section class="bloc">
+      <article id="feuille" class="monbloc">
+
+        <div id="page">
+          <ul id="liste_menu">
+          </ul>
+        </div>
+
+        <ul>
+          <li id="menu0" class="cachetoi">À PROPOS</li>
+          <li id="menu1" class="cachetoi">CONTACT</li>
+          <li id="menu2" class="cachetoi">PORTFOLIO</li>
+        </ul>
+
+        <section id="machine">
+          <ul id="nav">
+            <li><a href="#page" class="start" onclick="frameLooper();">Menu</a></li>
+            <li><a href="index.html">Reset</a></li>
+          </ul>
+          <img src="./img/vect-typew.png" alt="" id="typewriter" />
+        </section>
+      </article>
+    </section>
+
+    <script src="frameLooper.js"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+html, body, ul
+{
+  margin: 0;
+  padding-left: 3px;
+}
+
+.indicateur li
+{
+  display: inline-block;
+  list-style: none;
+  background:#bfd70e;
+  border-radius:50%;
+  height:100px;
+  width:100px;
+  border:2px solid #679403;
+}
+
+.indicateur li:nth-child(4), li:nth-child(7), li:last-child
+{
+  background: #FF0000;
+}

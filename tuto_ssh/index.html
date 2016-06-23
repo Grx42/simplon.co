@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tutotiel sur les clefs SSH</title>
+  </head>
+  <body>
+    <h1>Tutoriel : Les clefs SSH et Github</h1>
+    <h4>Ou l'art de se simplifier la vie</h4>
+
+    <h3>Première étape : Générer une clef SSH.</h3>
+    <p>Une <strong>clef SSH</strong> est un couple de fichiers générés sur votre machine, une clef privée et une clef publique, servant à vous identifier sur différents sites internet <strong>sans utiliser vos logins/mots de passe.</strong></p>
+
+    <p>Pour générer une clef SSH ouvrez un terminal (ctrl+alt+t sur toutes les bonnes distros) et tapez la commande : <mark>ssh-keygen</mark></p>
+
+    <p>Le terminal vous invite a entrez un nom de fichier et une passphrase, ce n'est pas obligatoire.</p>
+    <p>Si vous n'entrez pas de nom de fichier, le nom par defaut est : <strong>id_rsa</strong> pour la clef privée et <strong>id_rsa.pub</strong> pour la clef publique.
+    Si vous entrez une passphrase, vous devrez la taper à chaque ouverture de connexion.</p>
+
+    <h3>Deuxième étape : Ajouter une clef SSH à github.</h3>
+
+    <p>Dans votre terminal entrez <mark>cat ~/.ssh/id_rsa.pub</mark> pour faire apparaître votre <strong>clef publique</strong> et copiez la.
+    Allez dans les paramètres de votre compte github puis sur l'onglet SSH KEYS. Cliquez sur ajouter une clef, donnez lui un titre puis collez votre clef et validez.</p>
+
+  <p>Lorsque vous créez un dépôt, activez bien le <strong>protocole ssh</strong> à la place du protocole https sous la ligne QUICK SETUP (vos liens doivent apparaître sous cette forme <mark>git@github.com:votrecompte/nomdudepot.git</mark>)</p>
+
+    <h3 style="color:red;">/!\ Ne donnez jamais votre clef privée, ne la partagez pas! Elle est aussi importante que votre mot de passe /!\</h3>
+  </body>
+</html>

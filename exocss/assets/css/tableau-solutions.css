@@ -1,0 +1,4 @@
+.tableau_contact li:nth-child(2n+1)
+{
+  background-color: #808080;
+}

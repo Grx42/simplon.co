@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Exo js ulysse</title>
+  </head>
+
+  <body>
+
+
+    <script>
+
+    function compter_voyelle()
+    {
+      util_string = prompt("Tape un truc dans la boiboite !").toLowerCase();
+      string_trie = util_string;
+      var nb_voyelle = 0;
+      var i = 0;
+      var j = 0;
+      var tab_voyelles = ['a', 'e', 'i', 'o', 'u', 'y', 'é', 'è', 'à', 'ù', 'ë', 'ï', 'ä', 'ö', 'ÿ'];
+      while (i < string_trie.length)
+      {
+        while (j < tab_voyelles.length)
+        {
+          if (util_string[i] == tab_voyelles[j])
+          {
+            nb_voyelle += 1;
+            if (util_string[i] == 'a')
+            {
+              string_trie = string_trie.replace('a', 4);
+            }
+            else if (string_trie[i] == 'e')
+            {
+              string_trie = string_trie.replace('e', 3);
+            }
+            else if (string_trie[i] == 'i')
+            {
+              string_trie = string_trie.replace('i', 1);
+            }
+            else if (string_trie[i] == 'o')
+            {
+              string_trie = string_trie.replace('o', 0);
+            }
+            else if (string_trie[i] == 'u')
+            {
+              string_trie = string_trie.replace('u', 8);
+            }
+            else if (string_trie[i] == 'y')
+            {
+              string_trie = string_trie.replace('y', 7);
+            }
+          }
+          j++;
+        }
+        j = 0;
+        i++;
+      }
+      if (nb_voyelle >= 0 && nb_voyelle <= 5)
+      {
+        alert("Vous avez " + nb_voyelle + " voyelles dans votre phrase. \nC'est pas beaucoup !");
+      }
+      else if (nb_voyelle >= 6 && nb_voyelle <= 10)
+      {
+        alert("Vous avez " + nb_voyelle + " voyelles dans votre phrase. \nC'est pas trop mal. Peut mieux faire...");
+      }
+      else if (nb_voyelle > 10)
+      {
+        alert("Vous avez " + nb_voyelle + " voyelles dans votre phrase. \nSuper, continuez comme ca !");
+      }
+      else
+      {
+        alert("Pas de voyelles? Mais t'es un klingon ou quoi ?!");
+      }
+
+      alert("Tu as ecris\n " + string_trie);
+
+      if (nb_voyelle < 10)
+      {
+        compter_voyelle();
+      }
+    }
+
+
+    compter_voyelle();
+
+
+    </script>
+  </body>
+
+</html>

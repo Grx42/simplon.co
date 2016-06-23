@@ -1,0 +1,71 @@
+body
+{
+  margin: 0 0 0 0;
+  height: 100%;
+  width: 100%;
+}
+
+#pagecontent
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0 0 0 0;
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  font-size: medium;
+  font-family: serif, sans-serif, Arial;
+  color: white;
+}
+
+#pagecontent a
+{
+  color: white;
+}
+
+#pagecontent h1
+{
+  text-align: center;
+  text-decoration: underline;
+}
+
+#loginbox
+{
+  width: 400px;
+  height: 200px;
+  margin: auto;
+  margin-top: 20%;
+}
+
+form
+{
+  width: 350px;
+  height: 200px;
+  margin: auto;
+}
+
+#first
+{
+  margin-right: 20px;
+}
+
+#boutonEnvoi
+{
+  display: block;
+}
+
+form a
+{
+  display: block;
+  margin-top: 20px;
+}
+
+#errormsg
+{
+  float: right;
+  position: fixed;
+  top: 5px;
+  right: 30px;
+  clear: both;
+}

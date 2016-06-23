@@ -1,0 +1,143 @@
+
+@import url(http://fonts.googleapis.com/css?family=Cutive+Mono);
+html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    font:inherit;
+    vertical-align:baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display:block;
+}
+body {
+    line-height:1;
+}
+ol, ul {
+    list-style:none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content:'';
+    content:none;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+html, body {
+    height:100%;
+}
+body {
+    background-color:#49483E
+;
+}
+.cb {
+    clear:both;
+}
+a {
+    text-decoration:none;
+}
+#nav {
+    position:fixed;
+    top:0;
+    left:20px;
+    z-index:100;
+}
+#nav a {
+    text-decoration:none;
+    color:#fff;
+}
+#nav a:hover {
+    text-decoration:none;
+    color:#333;
+}
+.bloc {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    margin:auto;
+    text-align:center;
+}
+#feuille {
+    position:relative;
+    bottom:0;
+    width:100%;
+    margin:auto;
+    text-align:center;
+    z-index:5;
+}
+#typewriter {
+    width:35%;
+    min-width:260px;
+}
+#page li {
+    padding:10px 10px 0 10px;
+    text-align:left;
+    font-weight:300;
+    font:25px 'Cutive Mono',serif;
+    text-align:left;
+}
+#page {
+    overflow:hidden;
+    position:relative;
+    bottom:-30px;
+    width:24%;
+    min-width:180px;
+    min-height:30px;
+    margin:0 auto;
+    background:url(../img/rice-paper-2.png);
+    background-color:#fff;
+    box-shadow:4px 3px 10px #000;
+    border-bottom:10px solid #F3EFEC
+;
+    border-top:10px solid #F3EFEC
+;
+    z-index:3;
+}
+#page:target {
+    overflow:hidden;
+    position:relative;
+    bottom:-30px;
+    width:24%;
+    min-width:180px;
+    height:auto;
+    border-bottom:10px solid #F3EFEC
+;
+    border-top:10px solid #F3EFEC
+;
+    background:url(../img/rice-paper-2.png);
+    background-color:#fff;
+    z-index:4;
+}
+#lampe {
+    position:absolute;
+    bottom:0;
+    right:250px;
+    width:32%;
+    min-width:250px;
+    height:auto;
+    z-index:100;
+}
+#machine {
+    position:relative;
+    bottom:0px;
+    height:100%;
+    z-index:99;
+}
+#menu {
+    display:none;
+}
+p {
+    position:relative;
+    z-index:1000;
+}
+
+.cachetoi
+{
+  display: none;
+}

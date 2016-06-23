@@ -1,0 +1,96 @@
+body
+{
+  margin: 0 0 0 0;
+  width: 100%;
+  height: 100%;
+}
+
+header
+{
+  height: 98px;
+  background-image: url("images/background.jpg");
+}
+/* ------ menu ------- */
+nav
+{
+  vertical-align: top;
+  height: 25px;
+}
+
+nav ul
+{
+  margin-top: 1px;
+  text-align: center;
+  z-index: 2000000;
+}
+
+nav ul li
+{
+  margin-left: 45px;
+  margin-right: 45px;
+  display: inline-block;
+  width: 75px;
+  z-index: 2000000;
+}
+
+.menucache
+{
+  width: 100px;
+}
+
+.menucache li
+{
+  background-color: white;
+  width: 90px;
+}
+
+#menu1, #menu2, #menu3
+{
+  float: left;
+}
+
+/* -------- section ---------- */
+section
+{
+  clear: both;
+  height: 360px;
+  z-index: 1;
+}
+
+#diaporama
+{
+  z-index: 1;
+  margin: auto;
+  margin-top: 50px;
+}
+
+/* -------- footer ----------- */
+
+footer div
+{
+  display: inline-block;
+  vertical-align: bottom;
+  width: 33%;
+}
+
+footer div ul
+{
+  list-style: none;
+}
+
+#footmenu
+{
+  line-height: 15px;
+}
+
+#datefab
+{
+  text-align: center;
+  margin-left: -1px;
+  margin-right: 0px;
+}
+
+#lemailduweb
+{
+  text-align: right;
+}

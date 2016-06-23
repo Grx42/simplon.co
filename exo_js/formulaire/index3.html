@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>formulaire js</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+
+    <section>
+      <form id="monForm">
+        <p><label for="login">Login :</label>
+        <input type="text" name="login" class="formulaire" id="login" required>*</p>
+        <p><label for="nom">Nom :</label>
+        <input type="text" name="nom" class="formulaire" id="nom"></p>
+        <p><label for="prenom">Prenom :</label>
+        <input type="text" name="prenom" class="formulaire" id="prenom"></p>
+        <p><label for="mail">Adresse mail :</label>
+        <input type="email" name="mail" class="formulaire" id="mail" required>*</p>
+        <p><label for="website">Site web :</label>
+        <input type="url" name="website" class="formulaire" id="website"></p>
+        <p><label for="motdepasse">Mot de passe :</label>
+        <input type="password" name="motdepasse" class="formulaire" id="motdepasse" placeholder="min 6 caracteres dont 2 chiffres" pattern=".{6,}[0-9.{2}]" required>*</p>
+        <p><label for="motdepasse2">Confirmation du mot de passe :</label>
+        <input type="password" name="motdepasse2" class="formulaire" id="motdepasse2" placeholder="Retapez le meme mot de passe" required>*</p>
+
+        <p id="test1"><input type="checkbox" name="accept_cluf" id="boite" required>J'accepte les termes du contrat utilisateur.</p>
+
+        <input type="submit" name="valide" id="bouton" value="envoyer" />
+        <input type="reset" name="efface" value="reset" />
+      </form>
+    </section>
+
+    <script src="formerrorblureachfield.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,18 @@
+section
+{
+  width: 100%;
+}
+
+.formulaire
+{
+  position: absolute;
+  left: 300px;
+}
+
+#boite
+{
+  position: relative;
+  bottom: -2px;
+  margin-right: 10px;
+  vertical-align: bottom;
+}

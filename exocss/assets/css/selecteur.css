@@ -1,0 +1,40 @@
+.master
+{
+  margin: 0;
+}
+
+.master div
+{
+  background-color: #98B98B;
+  border: 1px solid #808080;
+  display: inline-block;
+  width: 48%;
+  margin: 10px 10px 10px 10px;
+}
+
+.master div img
+{
+  width: 48%;
+  float: left;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+
+.master div h2
+{
+  margin-left: 13px;
+  margin-top: 32px;
+}
+
+.master div h3
+{
+  color: white;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+
+.master div p
+{
+  margin-left: 10px;
+  color: #425952;
+}

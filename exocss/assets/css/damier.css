@@ -1,0 +1,56 @@
+.damier li
+{
+  /* 20 pions de chaque cote */
+  width: 50px;
+  height: 50px;
+  float: left;
+  list-style-type: none;
+}
+
+ul
+{
+  display: inline-block;
+  width: 500px;
+}
+
+/* -------------------- couleur damier -------------------- */
+.damier li:nth-child(20n+1), li:nth-child(20n+3), li:nth-child(20n+5), li:nth-child(20n+7), li:nth-child(20n+9)
+{
+  background-color: #F2F2ED;
+}
+
+.damier li:nth-child(20n+11), li:nth-child(20n+13), li:nth-child(20n+15), li:nth-child(20n+17), li:nth-child(20n+19)
+{
+  background-color: #514F4E;
+}
+
+.damier li:nth-child(20n+2), li:nth-child(20n+4), li:nth-child(20n+6), li:nth-child(20n+8), li:nth-child(20n+10)
+{
+  background-color: #514F4E;
+}
+
+.damier li:nth-child(20n+12), li:nth-child(20n+14), li:nth-child(20n+16), li:nth-child(20n+18), li:nth-child(20n+20)
+{
+  background-color: #F2F2ED;
+}
+
+/* -------------------- pions -------------------- */
+.damier li:nth-child(20n+71), li:nth-child(20n+73), li:nth-child(20n+75), li:nth-child(20n+77), li:nth-child(20n+79)
+{
+  background-image: url("pion.png");
+}
+
+.damier li:nth-child(20n+62), li:nth-child(20n+64), li:nth-child(20n+66), li:nth-child(20n+68), li:nth-child(20n+70)
+{
+  background-image: url("pion.png");
+}
+
+.damier li:nth-last-child(20n+71), li:nth-last-child(20n+73), li:nth-last-child(20n+75), li:nth-last-child(20n+77), li:nth-last-child(20n+79)
+{
+  background-image: url("pion_noir.png");
+}
+
+.damier li:nth-last-child(20n+62), li:nth-last-child(20n+64), li:nth-last-child(20n+66), li:nth-last-child(20n+68), li:nth-last-child(20n+70)
+{
+  background-image: url("pion_noir.png");
+}
